@@ -1,0 +1,17 @@
+&tkinput
+  calculation = 'cgp'
+  file_mat2 = 'mat2R.8.redyn'
+  file_mat3 = 'mat3R.3py.asr.sparse'
+  outdir = './TK/300K/64.25.noiso'
+  asr2 = 'simple'
+  nk = 64,64,1
+  nk_in =  64,64,1
+  isotopic_disorder=.false.
+  !casimir_scattering = .true.
+  !casimir_length_mu = 10
+  nconf = 1
+  niter_max = 10
+  !thr_tk = 1.d-8
+ /
+CONFIGS
+25.	300.

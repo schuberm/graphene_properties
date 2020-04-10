@@ -1,0 +1,38 @@
+&allocations
+        nelements=1,
+        natoms=2,
+        ngrid(:)=64 64 1
+&end
+&crystal
+        lfactor=0.2439507118,
+        lattvec(:,1)=1.0 0.0  0.0,
+        lattvec(:,2)=-0.5  0.866025 0.0,
+        lattvec(:,3)=0.0  0.0  10.200000,
+        elements="C"
+        types=1,1
+        positions(:,1)=0.0 0.0   0.0,
+        positions(:,2)=0.333333333 0.666666666666667 0.0
+        epsilon(:,1)=1.5 0.00000000 0.00000000,
+        epsilon(:,2)=0.00000000 1.5 0.00000000,
+        epsilon(:,3)=0.00000000 0.00000000 1.5,
+        born(:,1,1)=0.0 0.0000000 0.0000000
+        born(:,2,1)=0.0000000 0.0 0.0000000,
+        born(:,3,1)=0.0000000 0.0000000 0.0,
+        born(:,1,2)=0.0  0.0000000  0.0000000,
+        born(:,2,2)= 0.0000000 0.0  0.0000000,
+        born(:,3,2)= 0.0000000  0.0000000 0.0,
+        scell(:)=8 8 1
+&end
+&parameters
+        !T_min = 50
+	!T_max = 400
+	!T_step = 50
+	T = 300
+        scalebroad=1.1
+	maxiter=100000
+&end
+&flags
+        espresso=.true.
+        nonanalytic=.false.
+        isotopes=.false.
+&end
